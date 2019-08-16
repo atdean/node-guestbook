@@ -17,7 +17,7 @@ const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
 
 app.get("/", function(request, response) {
-    response.end("Hello!");
+    response.render("index");
 });
 
 // Handle 404 errors
