@@ -1,0 +1,19 @@
+{
+    "name": "node-guestbook",
+    "description": "A simple and quaint late-90s styled guestbook app - just for fun.",
+    "author": "Austin Dean <austin@atdean.com> (http://atdean.com)",
+    "version": "0.0.1",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/atdean/node-guestbook.git"
+    },
+    "homepage": "https://github.com/atdean/node-guestbook",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
