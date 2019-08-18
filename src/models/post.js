@@ -1,13 +1,37 @@
-module.exports = (sequelize, type) => {
+module.exports = (sequelize, Sequelize) => {
     return sequelize.define('post', {
         id: {
-            type: type.INTEGER,
+            type: Sequelize.INTEGER,
             primaryKey: true,
-            autoIncremenet: true
+            autoIncrement: true,
         },
-        authorName: type.STRING,
-        authorEmail: type.STRING,
-        authorWebsite: type.STRING,
-        comment: type.STRING
+        authorName: {
+            type: Sequelize.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        authorEmail: {
+            type: Sequelize.STRING,
+            allowNull: true,
+            validate: {
+                isEmail: true
+            }
+        },
+        authorWebsite: {
+            type: Sequelize.STRING,
+            allowNull: true,
+            validate: {
+                isUrl: true
+            }
+        },
+        comment: {
+            type: Sequelize.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        }
     });
-}
+};

@@ -1,5 +1,20 @@
 <% include partials/page-header %>
 
-Welcome to my guestbook!
+<h1>Welcome to my guestbook!</h1>
+
+<a class="sign-button" href="/sign">Sign My Guestbook!</a>
+
+<div class="entries-list">
+    <% entries.forEach(function(entry) { %>
+        <div class="entry">
+            <div class="top-row">
+                <%= entry.get('authorName'); %>
+            </div>
+            <div class="content-body">
+                <%= entry.get('comment') %>
+            </div>
+        </div>
+    <% }); %>
+</div>
 
 <% include partials/page-footer %>

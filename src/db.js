@@ -17,7 +17,7 @@ const sequelize = new Sequelize('node_guestbook', 'root', 'root', {
 const Post = PostModel(sequelize, Sequelize);
 
 // Setting force to true wipes out and rebuilds the tables each time
-sequelize.sync({ force: true });
+sequelize.sync({ force: false });
 
 module.exports = {
     Post

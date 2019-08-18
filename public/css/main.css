@@ -1,3 +1,37 @@
 body {
-    color: #00f;
+    font-family: 'Comic Sans', sans-serif;
+}
+
+a.sign-button {
+    padding: 10px 40px;
+    border: #000 2px solid;
+}
+
+div.form-row {
+    padding: 10px 0;
+}
+
+div.form-row label {
+    display: inline-block;
+    width: 120px;
+}
+
+.entries-list {
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.entries-list .entry{
+    margin-bottom: 20px;
+    border: 2px solid #000;
+}
+
+.entries-list .entry .top-row {
+    padding: 4px 8px;
+    background-color: #ae56ff;
+    font-weight: bold;
+}
+
+.error-section {
+    background-color: #f00;
 }
