@@ -1,8 +1,10 @@
 <% include partials/page-header %>
 
-<h1>Welcome to my guestbook!</h1>
+<header><h1>Welcome to Austin's guestbook!</h1></header>
 
-<a class="sign-button" href="/sign">Sign My Guestbook!</a>
+<div class="sign-button-wrap">
+    <a class="sign-button" href="/sign">Sign My Guestbook!</a>
+</div>
 
 <div class="entries-list">
     <% entries.forEach(function(entry) { %>

@@ -1,10 +1,28 @@
 body {
     font-family: 'Comic Sans', sans-serif;
+    background: url('/images/silly-gifs/stars2.gif');
+}
+
+header h1 {
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+a:link, a:visited, a:hover {
+    color: #fff;
+}
+
+.sign-button-wrap {
+    text-align: center;
 }
 
 a.sign-button {
     padding: 10px 40px;
-    border: #000 2px solid;
+    border: #ae56ff 2px solid;
+    background-color: #5f1499;
+    display: inline-block;
 }
 
 div.form-row {
@@ -23,7 +41,8 @@ div.form-row label {
 
 .entries-list .entry{
     margin-bottom: 20px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
+    background-color: #fff;
 }
 
 .entries-list .entry .top-row {
@@ -34,4 +53,8 @@ div.form-row label {
 
 .error-section {
     background-color: #f00;
+}
+
+footer {
+    text-align: center;
 }
